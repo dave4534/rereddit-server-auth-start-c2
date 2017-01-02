@@ -1,5 +1,5 @@
-app.controller('NavCtrl', ['$scope', 'auth', function($scope, auth){
-  $scope.isLoggedIn = auth.isLoggedIn;
-  $scope.currentUser = auth.currentUser;
-  $scope.logOut = auth.logOut;
+app.controller('NavCtrl', ['$scope', 'authService', function($scope, authService){
+  $scope.isLoggedIn = authService.isLoggedIn;
+  $scope.currentUser = authService.currentUser;
+  $scope.logOut = authService.logOut;
 }]);
